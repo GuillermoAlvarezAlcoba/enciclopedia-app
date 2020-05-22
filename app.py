@@ -32,8 +32,8 @@ df = pd.DataFrame(datos)
 st.text("")
 st.text("")
 
-st.markdown("**Comencemos por conocer la situación de España en los relativo a la crisis del Covid-19 :mask:**")
-st.text("Selecciona en el desplegable lo que te interese saber y empecemos a conocer la situación")
+st.markdown("**Comencemos por conocer la situación de España en lo relativo a la crisis del Covid-19 :mask:**")
+st.markdown("Selecciona en el desplegable lo que te interese saber y empecemos a conocer la situación")
 
 
 add_selectbox = st.sidebar.selectbox(
@@ -434,14 +434,14 @@ st.text("")
 
 data_filter = datos[datos['Nombre'] == option]
 st.markdown("**Ahora entremos a conocer un poco más en detalle los municipios del territorio español** ")
-st.text("Selecciona en el desplegable una opción y comienza a investigar")
+st.markdown("Selecciona en el desplegable una opción y comienza a investigar")
 
 st.markdown("**Los datos sobre el municipio que ha seleccionado son:** ")
 st.text("")
 st.write(data_filter)
 
 st.text("")
-st.text("Para conocer la ubicación del municipio en el mapa presta atención a la siguiente imagen")
+st.markdown("Para conocer la ubicación del municipio en el mapa presta atención a la siguiente imagen")
 
 st.text("")
 
