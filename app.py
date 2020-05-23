@@ -590,18 +590,18 @@ elif add_selectbox == 'Valora tu experiencia':
 
       st.markdown("Valora tu experiencia con esta herramienta con el único objetivo de ayudarnos a mejorar, cuanto más sincera sea la respuesta **MEJOR**")
     
-      #st.markdown("**En el siguiente espacio podrá escribir comentarios específicos para tener en cuenta**")
-      #txt = st.text_area("")  
+      st.markdown("**En el siguiente espacio podrá escribir comentarios específicos para tener en cuenta**")
+      txt = st.text_area("")  
       
       
-      #if st.button('Enviar'):
+      if st.button('Enviar'):
           
-       #   opiniones_df = pd.read_excel('Opiniones.xlsx')
-        #  nueva_opinion = pd.DataFrame({'Opiniones' : [txt] }) 
-         # opiniones_df = opiniones_df.append(nueva_opinion)
+          opiniones_df = pd.read_excel('Opiniones.xlsx')
+          nueva_opinion = pd.DataFrame({'Opiniones' : [txt] }) 
+          opiniones_df = opiniones_df.append(nueva_opinion)
           
-          #st.write('¡Gracias por tu opinion! :+1:')
-          #opiniones_df.to_excel("Opiniones.xlsx", "Hoja1")    
+          st.write('¡Gracias por tu opinion! :+1:')
+          opiniones_df.to_excel("Opiniones.xlsx", "Hoja1")    
     
     
     
