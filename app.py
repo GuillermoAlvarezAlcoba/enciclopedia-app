@@ -11,6 +11,8 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 import altair as alt
+import openpyxl
+
 
 pd.options.display.max_columns = None
 pd.options.display.max_rows = None
