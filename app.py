@@ -598,12 +598,12 @@ elif add_selectbox == 'Valora tu experiencia':
       
       if st.button('Enviar'):
           
-          opiniones_df = pd.read_excel('Opiniones.xlsx')
+          opiniones_df = pd.read_excel('https://github.com/GuillermoAlvarezAlcoba/enciclopedia-app/blob/master/Opiniones.xlsx')
           nueva_opinion = pd.DataFrame({'Opiniones' : [txt] }) 
           opiniones_df = opiniones_df.append(nueva_opinion)
           
           st.write('¡Gracias por tu opinion! :+1:')
-          opiniones_df.to_excel("Opiniones.xlsx", "Hoja1")    
+          opiniones_df.to_excel("https://github.com/GuillermoAlvarezAlcoba/enciclopedia-app/blob/master/Opiniones.xlsx", "Hoja1")    
     
     
     
